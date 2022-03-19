@@ -5,12 +5,6 @@ Input: graph = [[1,2],[3],[3],[]]
 Output: [[0,1,3],[0,2,3]]
 Explanation: There are two paths: 0 -> 1 -> 3 and 0 -> 2 -> 3
 '''
-
-from pip import main
-from sympy import li
-import json
-
-
 class Solution:
     def __init__(self, graph) -> None:
         self.graph = graph
