@@ -2,23 +2,23 @@
 Given n, print all valid parenthesis
 '''
 
-class parenthesis:
+class Parenthesis:
     def __init__(self, size) -> None:
         self.n = size
         self.result = []
-    def printall(self,open = 0, close = 0, st = []):
-        if open == close == self.n:
+    def printall(self, op = 0, close = 0, st = []):
+        if op == close == self.n:
             self.result.append(''.join(st))
-        if open < self.n:
+        if op < self.n:
             st.append('(')
-            self.printall(open+1,close,st)
+            self.printall(op+1,close,st)
             st.pop()
-        if close < open:
+        if close < op:
             st.append(')')
-            self.printall(open,close+1,st)
+            self.printall(op,close+1,st)
             st.pop()
         
-p = parenthesis(int(input()))
+p = Parenthesis(int(input()))
 p.printall()
 print(p.result)
 
