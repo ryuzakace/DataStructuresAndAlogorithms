@@ -47,7 +47,7 @@ class MergeSort:
         self.__partition(0, len(self.seq) - 1)
         return self.seq
 
-arr = [2,1,3,4,5,2,3,1,5,6,3,2,3,45,3,23,4,41,1,4]
+arr = [2,1,3,4,5,2,3,1,5,6,3,2,3,45,3,23,4,41,1,4,7]
 
 ms = MergeSort(arr)
 
